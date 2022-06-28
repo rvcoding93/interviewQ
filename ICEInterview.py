@@ -16,7 +16,9 @@ import os
  
 #===================VARIABLES======================================================================
 
-fileSource = open('file1.txt','r') #==========|'r' is reading mode in py|==========================
+textFileImp = ['file1.txt']
+FOLDER_PATH = r"C:\Users\Sir Ronnie\Documents\1CODING\Python\interviewQ"
+fileSource = [open(f).read() for f in textFileImp] #==========|'r' is reading mode in py|========================== open('file1.txt','r')||||
 words = fileSource.lower()
 wordUses = 0
 lineCount = 0
